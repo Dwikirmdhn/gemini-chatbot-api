@@ -34,6 +34,14 @@ h1 {
   color: #fff;
 }
 
+.gradient-text {
+  background: var(--user-msg-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .chat-box {
   height: 400px;
   overflow-y: auto;
@@ -135,18 +143,27 @@ input[type="text"]:focus {
 }
 
 button {
-  padding: 10px 20px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
   border: none;
   background-color: var(--accent-color);
   color: white;
   border-radius: 8px;
-  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 button:hover {
   background-color: var(--accent-hover);
+}
+
+.send-icon {
+  transform: rotate(45deg) translate(-1px, 1px);
 }
 
 @keyframes fadeIn {

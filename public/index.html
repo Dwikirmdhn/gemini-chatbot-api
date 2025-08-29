@@ -11,11 +11,15 @@
 </head>
 <body>
   <div class="container">
-    <h1>Gemini AI Chatbot</h1>
+    <h1><span class="gradient-text">Gemini</span> Chatbot</h1>
     <div id="chat-box" class="chat-box"></div>
     <form id="chat-form">
       <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit">Send</button>
+      <button type="submit" aria-label="Send Message">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="send-icon">
+          <path d="M22 2 11 13"></path><path d="m22 2-7 20-4-9-9-4 20-7z"></path>
+        </svg>
+      </button>
     </form>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
